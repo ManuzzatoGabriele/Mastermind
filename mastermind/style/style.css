@@ -1,0 +1,144 @@
+:root {
+    
+    --bg-body: #121212; 
+    --bg-main: #1e1e1e; 
+    --bg-game: #2a2a2a; 
+    --bg-guess: #333333; 
+    --bg-result: #3d3d3d; 
+    --ball-wait: #555555;
+    --game-active: #aaaaaa;
+
+    /* Colori per bordi e ombre */
+--border-body: #292929;
+    --border-main: #444444;
+    --border-game: #555555;
+    --shadow-main: rgba(0, 0, 0, 0.5);
+
+    /* Colori per il testo e pulsanti */
+    --text-color: #e0e0e0;
+    --button-bg: #3a3a3a;
+    --button-hover: #5a5a5a;
+    --button-text: #ffffff;
+    --button-border: #777777;
+
+
+    --victory-bg: #e0e0e0; 
+    --victory-text: #1e1e2f; 
+}
+
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-main);
+    color: #CCC9DC;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 50px;
+    border: 1px solid var(--border-main);
+    border-radius: 20px;
+    box-shadow: 0 2px 6px var(--shadow-main);
+}
+
+
+.game {
+    display: flex;
+    background-color: var(--bg-game);
+    border: 1px solid var(--border-game);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+} 
+
+#currentGame {
+    display: flex;
+    background-color: var(--game-active);
+    border: 1px solid var(--border-game);
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.ball {
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: var(--ball-wait);
+    margin: 2px;
+
+}
+
+.result {
+    justify-content: right; 
+    margin-right: 0%;   
+
+}
+
+
+
+.ballRes {
+    width: 2vw;
+    height: 2vw;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: var(--ball-wait);
+}
+
+#tentativi {
+    font-size: 20px;
+}
+
+.vittoriaSconfitta {
+    position: absolute;
+    display: none;
+    color: var(--victory-text);
+    background-color: var(--victory-bg);
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.bottoni {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--button-border);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bottoni:hover {
+    background-color: var(--button-hover);
+}
+
+.rigioca {
+    margin-left: 22% ;
+}
+

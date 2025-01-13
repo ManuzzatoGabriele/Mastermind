@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="vittoriaSconfitta" id="sconfitta">
+        <h2>Hai perso</h2>
+        <button class="bottoni rigioca" onclick="reload()">Gioca ancora</button>
+    </div>
+    <div class="vittoriaSconfitta" id="vittoria">
+        <h2>Hai vinto</h2>
+        <button class="bottoni rigioca" onclick="reload()">Gioca ancora</button>
+    </div>
+    <div id="main">
+        <h1>MASTERMIND</h1>
+        <p id="tentativi">Tentativi rimasti: 5</p> 
+        <button class="bottoni" onclick="gioca()">Tenta</button>
+        <div id="currentGame">
+            <div class="guess">
+                <button onclick="change(0)" class="ball" id="0"></button>
+                <button onclick="change(1)" class="ball" id="1"></button>
+                <button onclick="change(2)" class="ball" id="2"></button>
+                <button onclick="change(3)" class="ball" id="3"></button>
+            </div>
+            <div class="result">
+            <div class="result1">
+                <button class="ballRes" id="0Res"></button>
+                <button class="ballRes" id="1Res"></button>
+            </div>
+            <div class="result2">
+                <button class="ballRes" id="2Res"></button>
+                <button class="ballRes" id="3Res"></button>
+            </div>
+        </div>
+        </div> 
+    </div>
+    
+</body>
+</html>
